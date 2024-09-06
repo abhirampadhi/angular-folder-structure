@@ -11,7 +11,7 @@ import { environment } from '@env';
 })
 export class NavComponent implements OnInit {
   public version = environment.version;
-  public repoUrl = 'https://github.com/mathisGarberg/angular-folder-structure';
+  public repoUrl = 'https://github.com/abhirampadhi/angular-folder-structure';
 
   public isDarkTheme$: Observable<boolean>;
 
