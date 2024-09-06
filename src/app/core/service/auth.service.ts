@@ -10,7 +10,7 @@ interface LoginContextInterface {
 }
 
 const defaultUser = {
-  username: 'Mathis',
+  username: 'Admin',
   password: '12345',
   token: '12345'
 };
@@ -22,6 +22,9 @@ export class AuthService {
   token: string;
 
   login(loginContext: LoginContextInterface): Observable<User> {
+
+    console.log(loginContext.username);
+
     const isDefaultUser =
       loginContext.username === defaultUser.username &&
       loginContext.password === defaultUser.password;
